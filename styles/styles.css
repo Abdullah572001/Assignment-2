@@ -32,9 +32,9 @@
 .btn-primary{
     background-color: rgba(230, 83, 60, 1);
     font-weight: 600;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     color: rgba(255, 255, 255, 1);
-    padding: 16px 46px;
+    padding: 14px 38px;
     border-radius: 42px;
     border: none;
     margin-right: 14px;
@@ -160,6 +160,50 @@ nav li:first-child{
     left: 1247px;
 }
 
+/* habits section styles */
+
+.habits{
+    padding-top: 100px;
+}
+.habits-content{
+    text-align: center;
+    padding-bottom: 58px;
+}
+.habits-title{
+    font-weight: 900;
+    font-size: 3rem;
+    color: rgba(255, 255, 255, 1);
+    margin-bottom: 14px;
+}
+.habits-des{
+    font-weight: 400;
+    font-size: .8rem;
+    color: rgba(255, 255, 255, 0.5);
+    padding: 0 300px;
+}
+.habits-cards{
+    display: flex;
+    justify-content: space-between;
+}
+.habits-card{
+    text-align: center;
+}
+.h-card-img{
+    border-radius: 50%;
+}
+.h-card-img-title{
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: rgba(255, 255, 255, 1);
+    padding-top: 30px;
+}
+.h-card-img-des{
+    font-weight: 400;
+    font-size: .8rem;
+    color: rgba(255, 255, 255, 0.5);
+    padding: 6px 35px;
+}
+
 
 /* media query for mobile */
 
@@ -168,7 +212,8 @@ nav li:first-child{
         max-width: 89%;
         margin: auto;
     }
-    .banner{
+    .banner,
+    .habits-cards{
         flex-direction: column;
     }
     nav ul{
@@ -178,6 +223,9 @@ nav li:first-child{
         display: block;
         margin-top: 10px;
     }
+    .btn-black{
+        margin-top: 10px;
+    }
     .it-1{
         top: 1345px;
         left: 52px;
@@ -185,5 +233,12 @@ nav li:first-child{
     .it-2{
         top: 1145px;
         left: 270px;
+    }
+    
+    .habits-des{
+        padding: 0;
+    }
+    .h-card-img-des{
+        padding: 10px 70px;
     }
 }
