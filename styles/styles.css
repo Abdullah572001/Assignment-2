@@ -270,7 +270,6 @@ nav li:first-child{
     gap: 150px;
     justify-content: space-between;
 }
-.bmi-table{}
 .bmi-table> h3{
     font-weight: 900;
     font-size: 1.8rem;
@@ -334,6 +333,75 @@ input, select{
     padding: 16px 70px;
 }
 
+/* Meet Our Team section styles */
+
+.meet-header{
+    margin-top: 88px;
+    padding-bottom: 120px;
+    text-align: center;
+}
+.meet-title{
+    font-weight: 900;
+    font-size: 3rem;
+    color: rgba(255, 255, 255, 1);
+    margin-bottom: 15px;
+}
+.meet-des{
+    font-weight: 400;
+    font-size: .8rem;
+    color: rgba(255, 255, 255, 0.5);
+    max-width: 530px;
+    margin: 0 auto;
+}
+.team{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 18px;
+}
+.team-card{
+    height: 229px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 18px;
+    display: grid;
+    align-items: end;
+}
+.team-card div{
+    padding: 0 0 16px 19px;
+}
+.team-card h4{
+    font-weight: 900;
+    font-size: 1.25rem;
+    color: rgba(255, 255, 255, 1);
+    margin-bottom: 3px;
+}
+.team-card p{
+    font-weight: 400;
+    font-size: .8rem;
+    color: rgba(255, 255, 255, 0.5);
+}
+.team-card-1{
+    background-image: url(../images/trainer1.png);
+}
+.team-card-2{
+    background-image: url(../images/trainer2.png);
+}
+.team-card-3{
+    background-image: url(../images/trainer3.png);
+}
+.team-card-4{
+    background-image: url(../images/trainer4.png);
+}
+.team-card-5{
+    background-image: url(../images/trainer5.png);
+}
+.team-card-6{
+    background-image: url(../images/trainer6.png);
+}
+
 /* media query for mobile */
 
 @media screen and (max-width:576px) {
@@ -346,6 +414,10 @@ input, select{
     .run,
     .bmi-container{
         flex-direction: column;
+    }
+    .team{
+        grid-template-columns: repeat(1, 1fr);
+        margin: 20px;
     }
     nav ul{
         display: none;
