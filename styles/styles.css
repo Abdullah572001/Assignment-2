@@ -241,6 +241,99 @@ nav li:first-child{
     padding-right: 70px;
 }
 
+/* BMI Calculator section styles */
+
+.bmi{
+    margin-top: 100px;
+}
+.bmi-header{
+    margin-left: 400px;
+    margin-bottom: 88px;
+}
+.bmi-header h3{
+    font-weight: 900;
+    font-size: 3rem;
+    color: rgba(255, 255, 255, 1);
+}
+.bmi-header p{
+    font-weight: 400;
+    font-size: .8rem;
+    color: rgba(255, 255, 255, 0.5);
+    margin-top: 14px;
+    padding-right: 650px;
+}
+.bmi-calculator{
+    background-color: rgba(34, 34, 34, 1);
+}
+.bmi-container{
+    display: flex;
+    gap: 150px;
+    justify-content: space-between;
+}
+.bmi-table{}
+.bmi-table> h3{
+    font-weight: 900;
+    font-size: 1.8rem;
+    color: rgba(255, 255, 255, 1);
+    padding: 52px 0 52px 0;
+}
+.bmi-table table{
+    border-collapse: collapse;
+}
+.bmi-table td, th{
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 12px 30px;
+}
+.bmi-table th{
+    text-align: left;
+    font-weight: 500;
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 1);
+}
+.bmi-table td{
+    font-weight: 400;
+    font-size: .8rem;
+    color: rgba(255, 255, 255, 0.5);
+}
+.bmi-form{
+    padding-top: 50px;
+}
+.bmi-form-title{
+    font-weight: 900;
+    font-size: 1.8rem;
+    color: rgba(255, 255, 255, 1);
+    margin-bottom: 14px;
+}
+.bmi-form-des{
+    font-weight: 400;
+    font-size: .8rem;
+    color: rgba(255, 255, 255, 0.5);
+    margin-bottom: 34px;
+    max-width: 520px;
+}
+.bmi-form form{
+    display: grid;
+    gap: 12px;
+    grid-template-columns: repeat(2, 1fr);
+}
+input, select{
+    border-radius: 8px;
+    border: none;
+    padding: 13px 0 13px 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    font-weight: 400;
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.6);
+}
+.select-2{
+    grid-column: span 2;
+}
+.bmi-form button{
+    margin-top: 34px;
+    margin-bottom: 52px;
+    padding: 16px 70px;
+}
+
 /* media query for mobile */
 
 @media screen and (max-width:576px) {
@@ -250,7 +343,8 @@ nav li:first-child{
     }
     .banner,
     .habits-cards,
-    .run{
+    .run,
+    .bmi-container{
         flex-direction: column;
     }
     nav ul{
@@ -281,6 +375,7 @@ nav li:first-child{
     .run{
         max-height: none;
         gap: 0;
+        margin-top: 66px;
     }
     .run-content{
         padding: 30px;
@@ -292,5 +387,18 @@ nav li:first-child{
     .btn-run{
         padding-left: 110px;
         padding-right: 110px;
+    }
+    .bmi-header{
+        margin: 25px;
+    }
+    .bmi-header p{
+        padding-right: 50px;
+    }
+    .bmi-form-des{
+        max-width: none;
+    }
+    input, select{
+        font-size: .8rem;
+        padding: 15px 0 15px 15px;
     }
 }
