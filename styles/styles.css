@@ -51,7 +51,7 @@ nav{
     justify-content: space-between;
     padding-top: 57px;
 }
-nav h3{
+.Fitness{
     font-weight: 800;
     font-size: 2.25rem;
     font-style: italic;
@@ -334,7 +334,9 @@ input, select{
 }
 
 /* Meet Our Team section styles */
-
+.meet-our-team{
+    padding-bottom: 88px;
+}
 .meet-header{
     margin-top: 88px;
     padding-bottom: 120px;
@@ -402,6 +404,54 @@ input, select{
     background-image: url(../images/trainer6.png);
 }
 
+/* footer section styles */
+
+.footer-for-color{
+    background-color: rgba(255, 255, 255, 0.1);
+}
+.footer-container{
+    display: flex;
+    gap: 100px;
+    justify-content: space-between;
+    padding-top: 66px;
+}
+#Fitness{
+    font-size: 5rem;
+    margin-bottom: 20px;
+}
+.footer-div-1 p{
+    font-weight: 400;
+    font-size: .8rem;
+    color: rgba(255, 255, 255, 0.5);
+    max-width: 450px;
+}
+.footer-div-2 h3, .footer-div-3 h3{
+    font-weight: 700;
+    font-size: 2rem;
+    color: rgba(255, 255, 255, 1);
+    margin-bottom: 40px;
+}
+.footer-div-2 p, .footer-div-3 p{
+    font-weight: 400;
+    font-size: 1.40rem;
+    color: rgba(255, 255, 255, 0.5);
+    margin-bottom: 20px;
+}
+.footer-copy{
+    padding-top: 36px;
+    text-align: center;
+}
+.footer-copy p{
+    font-weight: 400;
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.5);
+    padding-bottom: 36px;
+}
+hr{
+    margin-top: 80px;
+    border: 2px solid rgba(255, 255, 255, 0.1)
+}
+
 /* media query for mobile */
 
 @media screen and (max-width:576px) {
@@ -412,7 +462,8 @@ input, select{
     .banner,
     .habits-cards,
     .run,
-    .bmi-container{
+    .bmi-container,
+    .footer-container{
         flex-direction: column;
     }
     .team{
