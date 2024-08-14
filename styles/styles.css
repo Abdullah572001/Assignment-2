@@ -447,9 +447,77 @@ input, select{
     color: rgba(255, 255, 255, 0.5);
     padding-bottom: 36px;
 }
-hr{
+.hr{
     margin-top: 80px;
     border: 2px solid rgba(255, 255, 255, 0.1)
+}
+
+/* Unique section styles */
+
+.unique{
+    padding-bottom: 100px;
+}
+.unique-title{
+    text-align: center;
+    margin-bottom: 50px;
+}
+.unique-title h2{
+    font-size: 4rem;
+}
+.unique-cards{
+    display: flex;
+    justify-content: space-evenly;
+}
+.unique-card{
+    width: 30%;
+    background-color: rgba(34, 34, 34, 1);
+    padding: 40px 35px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    border-radius: 8px;
+}
+.unique-card> h3{
+    font-weight: 700;
+    font-size: 2rem;
+    color: rgba(255, 255, 255, 1);
+}
+.u-card-price{
+    width: 200px;
+    height: 200px;
+    background-color: #c72121;
+    margin: 44px 66px;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.u-card-price h3{
+    font-weight: 900;
+    font-size: 3rem;
+    color: rgba(255, 255, 255, 1);
+}
+.u-card-price h4{
+    font-weight: 400;
+    font-size: 1.25rem;
+    color: rgba(255, 255, 255, 0.5);
+}
+.unique-card p{
+    font-weight: 400;
+    font-size: .9rem;
+    color: rgba(255, 255, 255, 0.5);
+    margin-bottom: 25px;
+    margin-top: 25px;
+}
+.hr-2{
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+.btn-unique{
+    margin-top: 20px;
+    margin-bottom: 25px;
 }
 
 /* media query for mobile */
@@ -463,7 +531,8 @@ hr{
     .habits-cards,
     .run,
     .bmi-container,
-    .footer-container{
+    .footer-container,
+    .unique-cards{
         flex-direction: column;
     }
     .team{
@@ -523,5 +592,12 @@ hr{
     input, select{
         font-size: .8rem;
         padding: 15px 0 15px 15px;
+    }
+    .unique-title h2{
+        font-size: 3rem;
+    }
+    .unique-card{
+        width: 82%;
+        margin-bottom: 15px;
     }
 }
